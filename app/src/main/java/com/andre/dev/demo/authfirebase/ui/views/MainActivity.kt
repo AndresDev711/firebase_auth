@@ -4,10 +4,13 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import com.andre.dev.demo.authfirebase.databinding.ActivityMainBinding
+import kotlinx.coroutines.flow.MutableStateFlow
 
 class MainActivity : AppCompatActivity() {
 
   private lateinit var binding: ActivityMainBinding
+
+  var otpValue = MutableStateFlow<String>("")
 
   override fun onCreate(savedInstanceState: Bundle?) {
     super.onCreate(savedInstanceState)

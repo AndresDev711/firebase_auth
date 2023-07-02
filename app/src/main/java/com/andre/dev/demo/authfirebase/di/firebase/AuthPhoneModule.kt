@@ -25,10 +25,10 @@ object AuthPhoneModule {
     return AuthRepo(firebaseAuth)
   }
 
-  @Provides
-  @Singleton
-  fun provideAuthenticationUseCase(authRepository: AuthRepository): AuthenticationUseCase {
-    return AuthenticationUseCase(authRepository)
-  }
+//  @Provides
+//  @Singleton
+//  fun provideAuthenticationUseCase(authRepository: AuthRepository): AuthenticationUseCase {
+//    return AuthenticationUseCase(authRepository)
+//  }
 
 }
